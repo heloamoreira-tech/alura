@@ -54,37 +54,31 @@
                 <img src= "Gemini_Generated_Image_k2fefyk2fefyk2fe.png" alt= "">
         <div>
             <h2>Meu segundo post</h2>
-            <p> class= "artigo-autor"> por:Heloa ramos</p>
+            <p> class= "artigo-autor" por:Heloa ramos</p>
             <p>Boas-vindas ao meu primeiro site de curiosidades da tebela periódica! Aqui vou falar sobre as grandes informaçoẽs que talvez vc não saiba e ache fantástico.</p>
             <button>💜 <span>0</span></button>
             <button>👍 <span>0</span></button>
       </div>    
             </article>
+      </main>  
     
-         
-    </main>  
     <script>
-            const butoes = document.querySelectorAll
-                ("button");
+            const botoes = document.querySelectorAll ("button");
         botoes.forEach(function(botao){
             let curtiu=false;
              button.addEventListener("click", botaoClicado);
       function buttonClicado() {
-          console.log("fui clicado")
-        let texto = button.querySelectorAll("span");
+          console.log("fui clicado");
+        let texto = botao.querySelector("span");
           if (curtiu === false){
                texto.textContent++;
               curtiu = true;
-          } else{ texto.textContent --;
+          } else{ 
+              texto.textContent --;
                  curtiu= false;
-              
-          }
-       
+              }
       }  
-  })
- 
-  
-       
-    </script>
+  });
+   </script>
 </body>
 </html>
